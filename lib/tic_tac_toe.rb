@@ -1,7 +1,7 @@
 def play(board)
   puts "Welcome to Tic-Tac-Toe!"
   display_board(board)
-  until over?(board)
+  until over?(board) || draw?(board)
     turn(board)
   end
   if won?(board)
