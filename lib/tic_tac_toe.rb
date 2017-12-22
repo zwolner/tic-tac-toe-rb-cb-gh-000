@@ -73,7 +73,7 @@ def move(board, index, player_token)
 end
 
 def valid_move?(board, index)
-   if position_taken(board, index)
+   if position_taken?(board, index)
      true
    else
      false
