@@ -11,7 +11,6 @@ def play(board)
   end
 end
 
-
 #Display board method
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
