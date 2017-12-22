@@ -1,14 +1,13 @@
 def play(board)
   puts "Welcome to Tic-Tac-Toe!"
   display_board(board)
-  if over?(board)
-    if won?(board)
-      puts "Congratulations #{winner(board)}"
-    else draw?(board)
-      puts "Cat's Game!"
-    end
-  else
+  until over?(board)
     turn(board)
+  end
+  if won?(board)
+    puts "Congratulations #{winner(board)}"
+  else draw?(board)
+    puts "Cat's Game!"
   end
 end
 
