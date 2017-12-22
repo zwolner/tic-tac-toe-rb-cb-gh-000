@@ -1,6 +1,5 @@
 def play(board)
   puts "Welcome to Tic-Tac-Toe!"
-  board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
   display_board(board)
   if over?(board)
     if won?(board)
