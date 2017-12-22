@@ -1,3 +1,18 @@
+def play(board)
+  puts "Welcome to Tic-Tac-Toe!"
+  board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+  display_board(board)
+  if over?(board)
+    if won?(board)
+      puts "Congratulations #{winner(board)}"
+    elsif draw?(board)
+      puts "Cat's Game!"
+    end
+  else turn(board)
+  end
+end
+
+
 #Display board method
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
