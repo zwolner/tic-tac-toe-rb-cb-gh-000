@@ -68,12 +68,8 @@ def input_to_index(user_input)
   index = (user_input.to_i - 1)
 end
 
-def move(board, position, player_token)
-  board[position] = player_token
+def move(board, index, player_token)
+  board[index] = player_token
 end
 
-def valid_move?(board, position)
-  if board[position] != " " || board[position] != nil || board[position] != ""
-  else !(board[position] == "X" || board[position] == "O")
-  end
-end
+def valid_move?(board, index)
