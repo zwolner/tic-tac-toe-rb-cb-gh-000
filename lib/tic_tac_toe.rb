@@ -4,7 +4,7 @@ def play(board)
   until over?(board) || draw?(board)
     turn(board)
     if won?(board)
-      puts "Congratulations #{winner(board)}"
+      puts "Congratulations #{winner(board)!}"
     else draw?(board)
       puts "Cat's Game!"
     end
