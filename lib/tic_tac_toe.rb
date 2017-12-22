@@ -5,10 +5,11 @@ def play(board)
   if over?(board)
     if won?(board)
       puts "Congratulations #{winner(board)}"
-    elsif draw?(board)
+    else draw?(board)
       puts "Cat's Game!"
     end
-  else turn(board)
+  else
+    turn(board)
   end
 end
 
