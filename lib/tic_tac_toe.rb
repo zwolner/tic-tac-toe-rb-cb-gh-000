@@ -63,3 +63,7 @@ end
 def current_player(board)
   turn_count(board) % 2 == 0 ? "X" : "O"
 end
+
+def input_to_index
+  index = (user_input.to_i - 1)
+end
