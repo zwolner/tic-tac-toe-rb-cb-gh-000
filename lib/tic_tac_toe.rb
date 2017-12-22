@@ -85,6 +85,6 @@ def turn(board)
     move(board,index,player_token)
     display_board(board)
   else
-    turn(board, user_input)
+    turn(board)
   end
 end
