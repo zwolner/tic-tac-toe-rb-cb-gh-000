@@ -77,5 +77,3 @@ def valid_move?(board, position)
   if !(board[position] == "X" || board[position] == "O")
   end
 end
-
-    
