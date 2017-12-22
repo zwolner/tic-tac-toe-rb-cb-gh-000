@@ -76,7 +76,7 @@ def valid_move?(board, index)
    !(position_taken?(board, index)) && (0..9).include?(index)
 end
 
-def turn(board, user_input)
+def turn(board)
   puts "Please enter a move 1-9:"
   user_input = gets.strip
   index = input_to_index(user_input)
