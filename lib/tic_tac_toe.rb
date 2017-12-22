@@ -71,3 +71,11 @@ end
 def move(board, position, player_token)
   board[position] = player_token
 end
+
+def valid_move?(board, position)
+  if board[position] != " " || board[position] != nil || board[position] != ""
+  if !(board[position] == "X" || board[position] == "O")
+  end
+end
+
+    
